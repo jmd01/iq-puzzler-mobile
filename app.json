@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "iq-puzzler-mobile",
+    "name": "IQ Puzzler",
     "slug": "iq-puzzler-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -32,6 +32,12 @@
       "eas": {
         "projectId": "0d232dd0-d5dc-4c1b-bdc2-733b23957987"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/0d232dd0-d5dc-4c1b-bdc2-733b23957987"
     }
   }
 }

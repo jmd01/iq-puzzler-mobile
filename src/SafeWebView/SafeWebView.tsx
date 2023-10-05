@@ -9,17 +9,6 @@ import { StatusBar } from "expo-status-bar";
 export const SafeWebView = () => {
   const insets = useSafeAreaInsets();
 
-  // const [isWebviewLoaded, setIsWebviewLoaded] = useState(false);
-
-  // To avoid a white screen being shown whilst the webview loads we show a spinner which is hidden on receiving the postMessage webviewLoaded event
-  // The effect is a failsafe to ensure webview is still shown if postMessage webviewLoaded event isn't fired
-  // e.g. if the webviewLoaded postMessage code in deskpro-product were deleted at some point in the future
-  // native apps will never get pass the loading spinner
-  // useEffect(() => {
-  //   const timeout = setTimeout(() => setIsWebviewLoaded(true), 1000 * 15);
-  //   return () => clearTimeout(timeout);
-  // }, []);
-
   return (
     <StyledSafeAreaView style={{ paddingTop: insets.top }}>
       <WebView
@@ -28,7 +17,6 @@ export const SafeWebView = () => {
         }}
         overScrollMode="never"
       />
-      {/* {!isWebviewLoaded && <FullPageSpinner />} */}
       <StatusBar style="dark" />
     </StyledSafeAreaView>
   );
