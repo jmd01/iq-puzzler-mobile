@@ -13,7 +13,8 @@ export const SafeWebView = () => {
     <StyledSafeAreaView style={{ paddingTop: insets.top }}>
       <WebView
         source={{
-          uri: "https://iq-puzzler.vercel.app",
+          uri: "http://iq-puzzler.vercel.app/",
+          // uri: "http://192.168.1.40:4000/",
         }}
         overScrollMode="never"
       />
