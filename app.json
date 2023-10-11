@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#0F0A2C"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.jmd02.iqpuzzlermobile"
@@ -38,6 +36,14 @@
     },
     "updates": {
       "url": "https://u.expo.dev/0d232dd0-d5dc-4c1b-bdc2-733b23957987"
-    }
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
+        }
+      ]
+    ]
   }
 }

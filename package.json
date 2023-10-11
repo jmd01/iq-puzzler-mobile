@@ -27,7 +27,8 @@
     "react-native-web": "~0.19.6",
     "react-native-webview": "13.2.2",
     "styled-components": "^5.3.3",
-    "expo-updates": "~0.18.15"
+    "expo-updates": "~0.18.15",
+    "expo-av": "~13.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
