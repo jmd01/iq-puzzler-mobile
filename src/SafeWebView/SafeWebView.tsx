@@ -5,7 +5,7 @@ import { StyledSafeAreaView } from "../common/styles";
 import { StatusBar } from "expo-status-bar";
 import { Audio } from "expo-av";
 
-const uri = process.env.URI ?? "http://iq-puzzler.vercel.app";
+const uri = process.env.WEBVIEW_URI ?? "http://iq-puzzler.vercel.app";
 
 const injectedJavaScriptBeforeContentLoaded = `
   window.IQ_IS_WEBVIEW=true;
