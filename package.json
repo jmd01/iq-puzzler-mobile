@@ -11,7 +11,11 @@
     "build:development": "eas build --profile development",
     "build:preview": "eas build --profile preview",
     "build:production": "eas build --profile production",
-    "submit:android": "eas submit -p android"
+    "submit:android": "eas submit -p android",
+    "update:preview": "APP_VARIANT='preview' eas update --branch preview",
+    "update:production": "eas update --branch production",
+    "lint": "yarn eslint --max-warnings 0 --ext ts,tsx ./src",
+    "check:tsc": "yarn tsc --noEmit"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.8",
