@@ -39,9 +39,4 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     padding: 10,
   },
-  vertical: {
-    flexDirection: "column",
-    justifyContent: "center",
-    padding: 10,
-  },
 });

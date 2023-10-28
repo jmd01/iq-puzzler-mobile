@@ -12,7 +12,7 @@ interface ProcessEnv {
 const processEnv = process.env as ProcessEnv;
 const APP_VARIANT = processEnv.APP_VARIANT ?? "";
 
-const name = APP_VARIANT ? `IQ Puzzler - ${APP_VARIANT}` : "IQ Puzzler";
+const name = APP_VARIANT && APP_VARIANT !== "production" ? `IQ Puzzler - ${APP_VARIANT}` : "IQ Puzzler";
 const bundleIdentifier = APP_VARIANT
   ? `com.jmd02.iqpuzzlermobile.${APP_VARIANT}`
   : "com.jmd02.iqpuzzlermobile";

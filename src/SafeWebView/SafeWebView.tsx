@@ -36,7 +36,7 @@ export const SafeWebView = () => {
   // This is a bit around the house but it works, and we are at least able to use the mp3s from the webview and not have to copy them over
   React.useEffect(() => {
     (async () => {
-      let sounds: Record<string, Audio.SoundObject> = {};
+      const sounds: Record<string, Audio.SoundObject> = {};
       for (const path of paths) {
         sounds[`/audio/${path}.mp3`] = await Audio.Sound.createAsync({
           uri: `${uri}/audio/${path}.mp3`,
