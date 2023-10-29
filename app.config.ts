@@ -17,11 +17,13 @@ const bundleIdentifier = APP_VARIANT
   ? `com.jmd02.iqpuzzlermobile.${APP_VARIANT}`
   : "com.jmd02.iqpuzzlermobile";
 
+const VERSION = 2;
+
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name,
   slug: "iq-puzzler-mobile",
-  version: "1.0.1",
+  version: `1.0.${VERSION}`,
   orientation: "portrait",
   icon: "./assets/icon.png",
   userInterfaceStyle: "dark",
@@ -36,6 +38,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     bundleIdentifier,
   },
   android: {
+    versionCode: VERSION,
     adaptiveIcon: {
       foregroundImage: "./assets/adaptive-icon.png",
       backgroundImage: "./assets/adaptive-icon-background.png",
