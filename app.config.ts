@@ -21,7 +21,7 @@ const VERSION = 2;
 
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
-  name: "IQ Puzzler",
+  name,
   slug: "iq-puzzler-mobile",
   version: `1.0.${VERSION}`,
   orientation: "portrait",
