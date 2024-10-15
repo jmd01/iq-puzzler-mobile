@@ -17,7 +17,7 @@ const bundleIdentifier = APP_VARIANT
   ? `com.jmd02.iqpuzzlermobile.${APP_VARIANT}`
   : "com.jmd02.iqpuzzlermobile";
 
-const VERSION = 2;
+const VERSION = 3;
 
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
